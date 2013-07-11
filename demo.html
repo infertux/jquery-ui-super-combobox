@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Super Combobox Demo</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="super-combobox.css">
+    <style type="text/css">
+      #my_select {
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Super Combobox Demo</h1>
+
+    <select id="my_select" name="my_select" placeholder="How did you first hear about us?">
+      <option value=""></option>
+      <option value="Word of mouth">Word of mouth</option>
+      <option value="Search engine">Search engine</option>
+      <option value="Twitter">Twitter</option>
+      <option value="Online ad">Online ad</option>
+    </select>
+
+    <h2>Usage</h2>
+    <pre><code>
+      &lt;link rel="stylesheet" href="super-combobox.css"&gt;
+
+      &lt;script type="text/javascript" src="super-combobox.js"&gt;&lt;/script&gt;
+      &lt;script type="text/javascript"&gt;
+        $(function() { $("#my_select").super_combobox(); } );
+      &lt;/script&gt;
+    </code></pre>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="super-combobox.js"></script>
+    <script type="text/javascript">
+      $(function() { $("#my_select").super_combobox(); } );
+    </script>
+  </body>
+</html>
