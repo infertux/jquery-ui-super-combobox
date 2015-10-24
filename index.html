@@ -51,13 +51,21 @@
           <h1>Super Combobox</h1>
 
           <h2>Demo</h2>
-          <select id="my_select" name="my_select" placeholder="How did you first hear about us?">
-            <option value=""></option>
-            <option value="Word of mouth">Word of mouth</option>
-            <option value="Search engine">Search engine</option>
-            <option value="Twitter">Twitter</option>
-            <option value="Online ad">Online ad</option>
-          </select>
+
+          <form action="javascript:alert('submit triggered');">
+            <p>
+            <select id="my_select" name="my_select" placeholder="How did you first hear about us?" required>
+              <option selected disabled value=""></option>
+              <option value="Word of mouth">Word of mouth</option>
+              <option value="Search engine">Search engine</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Online ad">Online ad</option>
+            </select>
+            </p>
+            <p>
+              <input type="submit" value="Submit">
+            </p>
+          </form>
 
           <h2>Usage</h2>
           <pre><code>&lt;link rel="stylesheet" href="super-combobox.css"&gt;
