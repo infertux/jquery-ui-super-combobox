@@ -1,4 +1,4 @@
-// Super Combobox v1.0.0
+// Super Combobox v1.0.1
 
 (function( $ ) {
   $.widget( "custom.super_combobox", {
@@ -7,7 +7,7 @@
         .addClass( "super-combobox" )
         .insertAfter( this.element );
 
-      this.element.hide();
+      this.element.css({ "position": "absolute", "visibility": "hidden" });
       this._createAutocomplete();
       this._createShowAllButton();
     },
